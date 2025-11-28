@@ -1,0 +1,71 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled executables
+*.exe
+*.out
+*.app
+electible
+test_electible
+
+# Build directories
+obj/
+bin/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Static and dynamic libraries
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Compiled archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# OS generated files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Core dumps
+core
+vgcore.*
+
+# Valgrind output
+valgrind-out.txt
+
+# Coverage files
+*.gcov
+*.gcda
+*.gcno
+
+# Personal notes (if any)
+notes.txt
+TODO.txt
