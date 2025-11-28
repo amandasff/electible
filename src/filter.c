@@ -1,5 +1,5 @@
 // SE 2XC3 Lab 7.2: Electible
-// Module A: Filtering
+// filter.c
 // Amanda Wu
 
 #include <stdio.h>

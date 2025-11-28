@@ -12,6 +12,7 @@ test_electible
 # Build directories
 obj/
 bin/
+coverage/
 
 # IDE and editor files
 .vscode/

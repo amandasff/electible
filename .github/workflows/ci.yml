@@ -1,0 +1,35 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main, module-* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install build tools
+      run: sudo apt-get update && sudo apt-get install -y gcc make lcov
+
+    - name: Build project
+      run: make
+
+    - name: Run tests
+      run: make test
+
+    - name: Test help command
+      run: ./bin/electible --help
+
+    - name: Generate coverage report
+      run: make coverage
+
+    - name: Upload coverage files
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: coverage/

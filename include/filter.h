@@ -1,11 +1,11 @@
 // SE 2XC3 Lab 7.2: Electible
-// Module A: Filtering
+// filter.h
 // Amanda Wu
 
 #ifndef FILTER_H
 #define FILTER_H
 
-// Course struct - holds all the info about a course
+// struct holds all the info about a course
 typedef struct {
     char title[100];
     char course_code[10];
@@ -19,7 +19,7 @@ typedef struct {
     int year_offered;
 } Course;
 
-// FilterCriteria - used when you want to filter by multiple things at once
+// FilterCriteria filters by multiple things at once
 typedef struct {
     char subject_area[50];    // empty string = no filter
     int min_difficulty;       // -1 = no min
