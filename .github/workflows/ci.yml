@@ -17,7 +17,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y gcc make lcov
 
     - name: Build project
-      run: make
+      run: make clean && make
 
     - name: Run tests
       run: make test
